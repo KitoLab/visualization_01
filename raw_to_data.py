@@ -101,7 +101,7 @@ com_arrow_2 = com_arrow_2.astype(int)
 
 # 15.JSONファイルにして出力する
 with open(output_json, 'w') as f:
-    f.write(("node = \'" + node.to_json(orient='records') + "\';\r\nlink = \'" + link.to_json(orient='records') + "\';\r\nchat = \'" + com_arrow_2.to_json(orient='records') + "\';\r\ncomment= \'" + comment.to_json(orient='records') + "\';"))
+    f.write(("node = \'" + node.to_json(orient='records') + "\';\r\nlink = \'" + link.to_json(orient='records') + "\';"))
 
 # 16.終わり
 print('あ')
